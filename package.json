@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "elliptic": "^6.4.1",
+    "express": "^4.16.4",
+    "keccakjs": "^0.2.3",
+    "lodash": "^4.17.11"
+  },
+  "scripts": {
+    "start": "node .",
+    "dev": "node server.js"
+  }
+}

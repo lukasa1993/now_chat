@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name":    "now_chat_e2ee",
+  "builds":  [
+    {
+      "src": "**/*.js",
+      "use": "@now/node"
+    }
+  ]
+}
