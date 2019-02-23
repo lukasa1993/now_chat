@@ -3,8 +3,8 @@
   "name":    "now_chat_e2ee",
   "builds":  [
     {
-      "src": "**/*.js",
-      "use": "@now/node"
+      "src": "./index.js",
+      "use": "@now/node-server"
     }
   ]
 }

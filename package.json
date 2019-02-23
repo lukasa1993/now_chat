@@ -6,7 +6,7 @@
   "dependencies": {
     "elliptic": "^6.4.1",
     "express": "^4.16.4",
-    "keccakjs": "^0.2.3",
+    "browserify-sha3": "^0.0.4",
     "lodash": "^4.17.11"
   },
   "scripts": {

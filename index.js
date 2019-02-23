@@ -2,7 +2,7 @@ const _       = require('lodash');
 const EC      = require('elliptic').ec;
 const EdDSA   = require('elliptic').eddsa;
 const express = require('express');
-const keccak  = require('keccakjs');
+const keccak  = require('browserify-sha3').SHA3Hash;
 const app     = express();
 app.use(express.json());
 
@@ -128,4 +128,5 @@ app.post('*', async (req, res) => {
   }
 });
 
-module.exports = app;
+//module.exports = app;
+app.listen(3535, ()=>console.log("Started on 3535"));
