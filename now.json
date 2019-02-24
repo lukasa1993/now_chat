@@ -3,8 +3,30 @@
   "name":    "now_chat_e2ee",
   "builds":  [
     {
-      "src": "./index.js",
+      "src": "/index.js",
       "use": "@now/node-server"
+    },
+    {
+      "src": "/test/index.html",
+      "use": "@now/static"
     }
+  ],
+  "routes":  [
+    {
+      "src":  "/test",
+      "dest": "/test/index.html"
+    },
+    {
+      "src":  "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env":     {
+    "REDIS_HOST":     "@redis_host",
+    "REDIS_PORT":     "@redis_port",
+    "REDIS_PASSWORD": "@redis_password"
+  },
+  "alias":   [
+    "now-chat-e2ee"
   ]
 }
